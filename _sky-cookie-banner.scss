@@ -1,0 +1,76 @@
+.cokkie-banner-wrapper {
+	position: relative;
+	z-index: 100;
+}
+
+.cookie-banner-container {
+	padding:12px 20px;
+	background-color: #f0f0f0;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #666;
+	border-bottom: 1px solid #666;
+	font-size: $font-small;
+
+	a {
+		color: #333;
+		@include hover {
+			color: #000;
+		}
+	}
+}
+
+.cookie-banner-content {
+	padding: 0 0 0 25px;
+	position: relative;
+
+	svg {
+		width: 15px;
+		height: 15px;
+		fill: inherit;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	path {
+		fill: $color-1;
+	}
+}
+
+.cookie-banner-error {
+	margin: auto;
+}
+
+.cookie-banner-controlls {
+	margin-left: auto;
+
+	button {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1;
+		padding: 0 25px;
+		background-color: transparent;
+		border: none;
+		text-decoration: underline;
+		color: #333;
+		fill: #333;
+
+		@include hover {
+			fill: #000;
+			color: #000;
+		}
+	}
+
+	svg {
+		width: 13px;
+		height: 13px;
+		fill: inherit;
+		position: absolute;
+		top: 0px;
+		right: 0;
+	}
+}
