@@ -3,7 +3,7 @@
 		<div class="cookie-banner-content" sky-svg="privacy">
 			<strong>Vi bruger cookies.</strong>
 			Ved at bruge hjemmeside acceptere du, at vi gemmer cookies på din computer.
-			<a ng-href="::$ctrl.readMoreLink" ng-if="::$ctrl.readMoreLink">Vi har lavet en side, der forklare mere om det</a>
+			<a ng-href="{{::$ctrl.readMoreLink}}" ng-if="::$ctrl.readMoreLink">Vi har lavet en side, der forklare mere om det</a>
 		</div>
 		<div class="cookie-banner-controlls">
 			<button sky-svg="cross" ng-click="$ctrl.close()">Luk og vis ikke igen</button>
@@ -13,7 +13,7 @@
 		<div class="cookie-banner-content cookie-banner-error" sky-svg="privacy">
 			<strong>Du har slået cookies fra.</strong>
 			Det betyder, at der kan være områder på hjemmesiden, der ikke fungerer efter hensigten.
-			<a ng-href="::$ctrl.readMoreLink" ng-if="::$ctrl.readMoreLink"> Her kan du læse, hvad vi bruger cookies til.</a>
+			<a ng-href="{{::$ctrl.readMoreLink}}" ng-if="::$ctrl.readMoreLink"> Her kan du læse, hvad vi bruger cookies til.</a>
 		</div>
 	</div>
 </div>
