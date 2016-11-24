@@ -22,7 +22,14 @@
 			// Close the banner and set the cookie
 			this.close = function() {
 				this.active = false;
-				$cookies.put('hideCookieBanner', 1);
+				
+				let expirationDate = new Date();
+				expirationDate.setMonth(expirationDate.getMonth() + 2);
+				
+				$cookies.put('hideCookieBanner', 1, {
+					path: '/',
+					expires: expirationDate,
+
 			}
 		}
 })();
